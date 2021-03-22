@@ -8,6 +8,10 @@ app.get("/", (req, res) => {
   res.send("Hello world, I'm running on Express framework!");
 });
 
+app.get("/user", (req, res) => {
+  res.send("Sending a user!");
+});
+
 app.listen(port, () => {
   console.log("Server is listening on port " + port);
 });
